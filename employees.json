@@ -1,0 +1,128 @@
+[
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "badgenumber": "12345",
+    "department": "HR",
+    "shift": "Morning",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "badgenumber": "67890",
+    "department": "Finance",
+    "shift": "Afternoon",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Alice",
+    "lastname": "Johnson",
+    "badgenumber": "11223",
+    "department": "IT",
+    "shift": "Night",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Bob",
+    "lastname": "Martinez",
+    "badgenumber": "44556",
+    "department": "Sales",
+    "shift": "Morning",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Charlie",
+    "lastname": "Lee",
+    "badgenumber": "77889",
+    "department": "Marketing",
+    "shift": "Afternoon",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "David",
+    "lastname": "Kim",
+    "badgenumber": "99001",
+    "department": "Operations",
+    "shift": "Night",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Emily",
+    "lastname": "Brown",
+    "badgenumber": "22334",
+    "department": "Customer Support",
+    "shift": "Morning",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Fiona",
+    "lastname": "Wilson",
+    "badgenumber": "55667",
+    "department": "R&D",
+    "shift": "Afternoon",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "George",
+    "lastname": "Taylor",
+    "badgenumber": "88990",
+    "department": "Legal",
+    "shift": "Night",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Hannah",
+    "lastname": "White",
+    "badgenumber": "33445",
+    "department": "Admin",
+    "shift": "Morning",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Isaac",
+    "lastname": "Davis",
+    "badgenumber": "66778",
+    "department": "Procurement",
+    "shift": "Afternoon",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Jack",
+    "lastname": "Miller",
+    "badgenumber": "99887",
+    "department": "Engineering",
+    "shift": "Night",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Katherine",
+    "lastname": "Harris",
+    "badgenumber": "11234",
+    "department": "Finance",
+    "shift": "Morning",
+    "location": "Unknown",
+    "status": "Active"
+  },
+  {
+    "firstname": "Liam",
+    "lastname": "Garcia",
+    "badgenumber": "44321",
+    "department": "IT",
+    "shift": "Afternoon",
+    "location": "Unknown",
+    "status": "Active"
+  }
+]
