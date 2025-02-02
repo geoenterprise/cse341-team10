@@ -9,19 +9,6 @@
   "basePath": "/",
   "schemes": "http",
   "paths": {
-    "/": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/login": {
       "get": {
         "description": "",
@@ -33,6 +20,16 @@
       }
     },
     "/logout": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/": {
       "get": {
         "description": "",
         "responses": {

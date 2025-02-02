@@ -3,10 +3,10 @@ const passport = require('passport');
 
 routes.use('/', require('./swagger'));
 
-routes.get('/', (req, res) => { 
-    //#swagger.tags=['Whats up people!']
-    res.send('Whats up people!');
-});
+// routes.get('/', (req, res) => { 
+//     //#swagger.tags=['Whats up people!']
+//     res.send('Whats up people!');
+// });
 
 routes.use('/employees', require('./employees'));
 routes.use('/facilities', require('./facilities'));

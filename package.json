@@ -1,14 +1,15 @@
 {
-  "name": "cse341project2",
+  "name": "cse341_final_project",
   "version": "1.0.0",
   "description": "Second Project",
-  "homepage": "https://github.com/gatlingmcgee/cse341project2#readme",
+  "keywords": [],
+  "homepage": "https://github.com/gatlingmcgee/cse341_final_project#readme",
   "bugs": {
-    "url": "https://github.com/gatlingmcgee/cse341project2/issues"
+    "url": "https://github.com/gatlingmcgee/cse341_final_project/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatlingmcgee/cse341project2.git"
+    "url": "git+https://github.com/gatlingmcgee/cse341_final_project.git"
   },
   "license": "ISC",
   "author": "Sean",
