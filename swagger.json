@@ -5,10 +5,23 @@
     "description": "Tracks employee, manager and store location",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "localhost:3100",
   "basePath": "/",
   "schemes": "http",
   "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/login": {
       "get": {
         "description": "",
@@ -20,16 +33,6 @@
       }
     },
     "/logout": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/": {
       "get": {
         "description": "",
         "responses": {
