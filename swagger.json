@@ -29,7 +29,7 @@
         }
       }
     },
-    "/": {
+    "/api-docs": {
       "get": {
         "description": "",
         "responses": {
