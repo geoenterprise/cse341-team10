@@ -31,26 +31,28 @@ app
     .use(cors({ origin: '*'}))
     .use('/', require('./routes'));
 
-    passport.use(new GitHubStrategy({
-        clientID: process.env.GITHUB_CLIENT_ID,
-        clientSecret: process.env.GITHUB_CLIENT_SECRET,
-        callbackURL: process.env.CALLBACK_URL
-        },
-        function(accessToken, refreshToken, profile, done){
-            return done(null, profile);
-        }
-    ));
+    // Commented out for OAuth
+    // passport.use(new GitHubStrategy({
+    //     clientID: process.env.GITHUB_CLIENT_ID,
+    //     clientSecret: process.env.GITHUB_CLIENT_SECRET,
+    //     callbackURL: process.env.CALLBACK_URL
+    //     },
+    //     function(accessToken, refreshToken, profile, done){
+    //         return done(null, profile);
+    //     }
+    // ));
 
 process.on('uncaughtException', (err, origin) => {
     console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`);
 });
 
-passport.serializeUser((user, done) => {
-    done(null, user);
-});
-passport.deserializeUser((user, done) => {
-    done(null, user);
-});
+// Commented out for OAuth
+// passport.serializeUser((user, done) => {
+//     done(null, user);
+// });
+// passport.deserializeUser((user, done) => {
+//     done(null, user);
+// });
 
 app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `logged in as ${req.session.user.username}` : "Logged out")});
 app.get('/github/callback', passport.authenticate('github', {
