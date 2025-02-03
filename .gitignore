@@ -1,2 +1,7 @@
 node_modules
 .env
+employees.json
+facilities.json
+departments.json
+locations.json
+managers.json

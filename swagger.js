@@ -7,7 +7,7 @@ const doc = {
     title: 'Coorperate Company API',
     description: 'Tracks employee, manager and store location',
   },
-  host: 'localhost:3002',
+  host: 'localhost:3100',
   schemes: 'http',
 };
 

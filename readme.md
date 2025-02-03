@@ -15,3 +15,5 @@ This API is intended for a team assignment in CSE 341 to learn how to use Swagge
 - Import the temples.json file into your mongoDB database in a new collection called temples.
 
 # Merge test Sean
+
+# For OAuth-reestablish oauth apps in GitHub developer settings-set keys in .env file-uncomment index.js, employee.js, facilities.js/routes-rerun github2 package for package.json-uncomment server.js-rerun swagger.js

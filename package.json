@@ -1,32 +1,40 @@
 {
-  "name": "temple-api",
+  "name": "cse341_final_project",
   "version": "1.0.0",
-  "description": "LDS Temple API for BYU-Idaho WDD230 student projects",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js",
-    "swagger": "node ./swagger.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Second Project",
+  "keywords": [],
+  "homepage": "https://github.com/gatlingmcgee/cse341_final_project#readme",
+  "bugs": {
+    "url": "https://github.com/gatlingmcgee/cse341_final_project/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nathanbirch/temple-api.git"
+    "url": "git+https://github.com/gatlingmcgee/cse341_final_project.git"
   },
-  "author": "Nathan Birch",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nathanbirch/temple-api/issues"
+  "author": "Sean",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
-  "homepage": "https://github.com/nathanbirch/temple-api#readme",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
-    "express": "^4.17.1",
-    "mongoose": "^8.9.5",
-    "nodemon": "^3.1.9",
-    "swagger-ui-express": "^5.0.1"
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.9.6",
+    "passport": "^0.7.0",
+    "session-file-store": "^1.5.0",
+    "swagger-ui-express": "^5.0.1",
+    "validator": "^13.12.0",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
+    "nodemon": "^3.1.9",
     "swagger-autogen": "^2.23.7"
   }
 }
