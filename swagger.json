@@ -5,9 +5,9 @@
     "description": "Tracks employee, manager and store location",
     "version": "1.0.0"
   },
-  "host": "localhost:3100",
+  "host": "cse341-team10.onrender.com",
   "basePath": "/",
-  "schemes": "http",
+  "schemes": "https",
   "paths": {
     "/": {
       "get": {
