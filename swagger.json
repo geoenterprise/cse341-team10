@@ -5,9 +5,9 @@
     "description": "Tracks employee, manager and store location",
     "version": "1.0.0"
   },
-  "host": "cse341-team10.onrender.com",
+  "host": "localhost:3100",
   "basePath": "/",
-  "schemes": "https",
+  "schemes": "http",
   "paths": {
     "/": {
       "get": {
@@ -18,6 +18,16 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
@@ -344,6 +354,57 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/facilities/test/{id}": {
+      "put": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstname": {
+                  "example": "any"
+                },
+                "lastname": {
+                  "example": "any"
+                },
+                "badgenumber": {
+                  "example": "any"
+                },
+                "department": {
+                  "example": "any"
+                },
+                "shift": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "status": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
           }
         }
       }
