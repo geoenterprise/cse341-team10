@@ -1,23 +1,23 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./data/database');
-const passport = require('passport');
-const session = require('express-session');
-const GitHubStrategy = require('passport-github2').Strategy;
-const cors = require('cors');
+// const passport = require('passport');
+// const session = require('express-session');
+// const GitHubStrategy = require('passport-github2').Strategy;
+// const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3100;
 
 app
     .use(bodyParser.json())
-    .use(session({
-        secret: "secret" ,
-        resave: false ,
-        saveUninitialized: true,
-    }))
-    .use(passport.initialize())
-    .use(passport.session())
+    // .use(session({
+    //     secret: "secret" ,
+    //     resave: false ,
+    //     saveUninitialized: true,
+    // }))
+    // .use(passport.initialize())
+    // .use(passport.session())
     .use((req, res, next) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader(
@@ -27,8 +27,8 @@ app
         res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
         next();
     })
-    .use(cors({ methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH']}))
-    .use(cors({ origin: '*'}))
+    // .use(cors({ methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH']}))
+    // .use(cors({ origin: '*'}))
     .use('/', require('./routes'));
 
     // Commented out for OAuth
@@ -54,13 +54,13 @@ process.on('uncaughtException', (err, origin) => {
 //     done(null, user);
 // });
 
-app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `logged in as ${req.session.user.username}` : "Logged out")});
-app.get('/github/callback', passport.authenticate('github', {
-    failureRedirect: '/api-docs', session: false}),
-    (req, res) => {
-    req.session.user = req.user;
-    res.redirect('/');
-    });
+// app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `logged in as ${req.session.user.username}` : "Logged out")});
+// app.get('/github/callback', passport.authenticate('github', {
+//     failureRedirect: '/api-docs', session: false}),
+//     (req, res) => {
+//     req.session.user = req.user;
+//     res.redirect('/');
+//     });
 
 mongodb.initDb((err) => {
     if(err) {

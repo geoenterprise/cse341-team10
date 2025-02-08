@@ -2,7 +2,7 @@ const express = require('express');
 const routes = express.Router();
 const facilitiesController = require('../controllers/facilities');
 const validation = require('../middleware/validate');
-const { isAuthenticated } = require("../middleware/authenticate");
+// const { isAuthenticated } = require("../middleware/authenticate");
 
 routes.get('/', facilitiesController.getAllFacilities);
 routes.get('/:id', facilitiesController.getSingleFacility);
