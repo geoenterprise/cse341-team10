@@ -54,13 +54,13 @@ process.on('uncaughtException', (err, origin) => {
 //     done(null, user);
 // });
 
-app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `logged in as ${req.session.user.username}` : "Logged out")});
-app.get('/github/callback', passport.authenticate('github', {
-    failureRedirect: '/api-docs', session: false}),
-    (req, res) => {
-    req.session.user = req.user;
-    res.redirect('/');
-    });
+// app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `logged in as ${req.session.user.username}` : "Logged out")});
+// app.get('/github/callback', passport.authenticate('github', {
+//     failureRedirect: '/api-docs', session: false}),
+//     (req, res) => {
+//     req.session.user = req.user;
+//     res.redirect('/');
+//     });
 
 mongodb.initDb((err) => {
     if(err) {
