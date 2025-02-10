@@ -18,7 +18,7 @@ routes.put(
     validation.saveFacilities,
     (req, res) => {
         //#swagger.tags=['Facilities']
-        controller.update(req, res, collections.facilities(req, res))
+        controller.update(req, res, collections.facilities(req, res).name)
     }
 )
 routes.post('/', validation.saveFacilities, facilitiesController.createFacility);
