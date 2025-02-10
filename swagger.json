@@ -5,9 +5,12 @@
     "description": "Tracks employee, manager and store location",
     "version": "1.0.0"
   },
-  "host": "localhost:3100",
+  "host": "cse341-team10.onrender.com",
   "basePath": "/",
-  "schemes": "http",
+  "schemes": [
+    "https",
+    "http"
+  ],
   "paths": {
     "/": {
       "get": {
@@ -18,6 +21,16 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
@@ -52,13 +65,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstname": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
-                "badgenumber": {
+                "badgeNumber": {
                   "example": "any"
                 },
                 "department": {
@@ -137,13 +150,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstname": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
-                "badgenumber": {
+                "badgeNumber": {
                   "example": "any"
                 },
                 "department": {
@@ -344,6 +357,45 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/facilities/test/{id}": {
+      "put": {
+        "tags": [
+          "Facilities"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "facilityLocation": {
+                  "example": "any"
+                },
+                "facilityName": {
+                  "example": "any"
+                },
+                "facilityStatus": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
           }
         }
       }
