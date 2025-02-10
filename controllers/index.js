@@ -22,9 +22,7 @@ const getSingle = async (req, res, collection) => {
 };
 
 const create = async (req, res, collection) => {
-    const objectRules = collection.rules;
-
-    const result = await mongodb.getDatabase().db().collection(collection.name).insertOne(objectRules);
+    const result = await mongodb.getDatabase().db().collection(collection.name).insertOne(collection.rules);
     if (result.acknowledged > 0) {
         res.status(204).send();
     } else {
@@ -37,8 +35,7 @@ const update = async (req, res, collection) => {
         res.status(400).json('Must be valid ID to update');
     }
     const id = new ObjectId(req.params.id);
-    const objectRules = collection.rules;
-    const result = await mongodb.getDatabase().db().collection(collection.name).replaceOne({ _id: id }, objectRules);
+    const result = await mongodb.getDatabase().db().collection(collection.name).replaceOne({ _id: id }, collection.rules);
     if (result.modifiedCount > 0) {
         res.status(204).send();
     } else {
