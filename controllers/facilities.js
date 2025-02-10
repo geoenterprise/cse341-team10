@@ -78,5 +78,4 @@ module.exports = {
     createFacility,
     deleteFacility,
     updateFacility,
-    update
 }

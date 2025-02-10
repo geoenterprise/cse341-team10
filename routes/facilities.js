@@ -1,5 +1,6 @@
 const express = require('express');
 const routes = express.Router();
+const facilitiesController = require('../controllers/facilities')
 const controller = require('../controllers/index');
 const validation = require('../middleware/validate');
 const collections =require('../helpers/collections');
@@ -17,7 +18,7 @@ routes.put(
     validation.saveFacilities,
     (req, res) => {
         //#swagger.tags=['Facilities']
-        controller.update(req, res, collections.facilities)
+        controller.update(req, res, collections.facilities(req, res))
     }
 )
 routes.post('/', validation.saveFacilities, facilitiesController.createFacility);

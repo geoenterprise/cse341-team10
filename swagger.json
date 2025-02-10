@@ -5,9 +5,12 @@
     "description": "Tracks employee, manager and store location",
     "version": "1.0.0"
   },
-  "host": "localhost:3100",
+  "host": "cse341-team10.onrender.com",
   "basePath": "/",
-  "schemes": "http",
+  "schemes": [
+    "https",
+    "http"
+  ],
   "paths": {
     "/": {
       "get": {
@@ -62,13 +65,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstname": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
-                "badgenumber": {
+                "badgeNumber": {
                   "example": "any"
                 },
                 "department": {
@@ -147,13 +150,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstname": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
-                "badgenumber": {
+                "badgeNumber": {
                   "example": "any"
                 },
                 "department": {
@@ -361,7 +364,7 @@
     "/facilities/test/{id}": {
       "put": {
         "tags": [
-          "Employees"
+          "Facilities"
         ],
         "description": "",
         "parameters": [
@@ -377,25 +380,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstname": {
+                "facilityLocation": {
                   "example": "any"
                 },
-                "lastname": {
+                "facilityName": {
                   "example": "any"
                 },
-                "badgenumber": {
-                  "example": "any"
-                },
-                "department": {
-                  "example": "any"
-                },
-                "shift": {
-                  "example": "any"
-                },
-                "location": {
-                  "example": "any"
-                },
-                "status": {
+                "facilityStatus": {
                   "example": "any"
                 }
               }
