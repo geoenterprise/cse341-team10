@@ -1,129 +1,129 @@
 [
     {
       "name": "Marketing",
-      "contactinfo": "marketing@example.com",
+      "contactInfo": "marketing@example.com",
       "budget": "75k",
-      "teamsize": "30"
+      "teamSize": "30"
     },
     {
       "name": "Sales",
-      "contactinfo": "sales@example.com",
+      "contactInfo": "sales@example.com",
       "budget": "100k",
-      "teamsize": "60"
+      "teamSize": "60"
     },
     {
       "name": "Finance",
-      "contactinfo": "finance@example.com",
+      "contactInfo": "finance@example.com",
       "budget": "120k",
-      "teamsize": "25"
+      "teamSize": "25"
     },
     {
       "name": "Customer Support",
-      "contactinfo": "customersupport@example.com",
+      "contactInfo": "customersupport@example.com",
       "budget": "40k",
-      "teamsize": "55"
+      "teamSize": "55"
     },
     {
       "name": "Legal",
-      "contactinfo": "legal@example.com",
+      "contactInfo": "legal@example.com",
       "budget": "90k",
-      "teamsize": "12"
+      "teamSize": "12"
     },
     {
       "name": "Product Development",
-      "contactinfo": "productdev@example.com",
+      "contactInfo": "productdev@example.com",
       "budget": "110k",
-      "teamsize": "35"
+      "teamSize": "35"
     },
     {
       "name": "Operations",
-      "contactinfo": "operations@example.com",
+      "contactInfo": "operations@example.com",
       "budget": "80k",
-      "teamsize": "40"
+      "teamSize": "40"
     },
     {
       "name": "IT",
-      "contactinfo": "it@example.com",
+      "contactInfo": "it@example.com",
       "budget": "60k",
-      "teamsize": "22"
+      "teamSize": "22"
     },
     {
       "name": "Research and Development",
-      "contactinfo": "randd@example.com",
+      "contactInfo": "randd@example.com",
       "budget": "150k",
-      "teamsize": "18"
+      "teamSize": "18"
     },
     {
       "name": "Quality Assurance",
-      "contactinfo": "qa@example.com",
+      "contactInfo": "qa@example.com",
       "budget": "55k",
-      "teamsize": "25"
+      "teamSize": "25"
     },
     {
       "name": "Supply Chain",
-      "contactinfo": "supplychain@example.com",
+      "contactInfo": "supplychain@example.com",
       "budget": "85k",
-      "teamsize": "40"
+      "teamSize": "40"
     },
     {
       "name": "Public Relations",
-      "contactinfo": "pr@example.com",
+      "contactInfo": "pr@example.com",
       "budget": "65k",
-      "teamsize": "15"
+      "teamSize": "15"
     },
     {
       "name": "Business Development",
-      "contactinfo": "businessdev@example.com",
+      "contactInfo": "businessdev@example.com",
       "budget": "95k",
-      "teamsize": "25"
+      "teamSize": "25"
     },
     {
       "name": "Content Strategy",
-      "contactinfo": "contentstrategy@example.com",
+      "contactInfo": "contentstrategy@example.com",
       "budget": "70k",
-      "teamsize": "12"
+      "teamSize": "12"
     },
     {
       "name": "Data Analytics",
-      "contactinfo": "dataanalytics@example.com",
+      "contactInfo": "dataanalytics@example.com",
       "budget": "110k",
-      "teamsize": "20"
+      "teamSize": "20"
     },
     {
       "name": "Compliance",
-      "contactinfo": "compliance@example.com",
+      "contactInfo": "compliance@example.com",
       "budget": "50k",
-      "teamsize": "8"
+      "teamSize": "8"
     },
     {
       "name": "Procurement",
-      "contactinfo": "procurement@example.com",
+      "contactInfo": "procurement@example.com",
       "budget": "100k",
-      "teamsize": "18"
+      "teamSize": "18"
     },
     {
       "name": "Corporate Strategy",
-      "contactinfo": "corporatestrategy@example.com",
+      "contactInfo": "corporatestrategy@example.com",
       "budget": "130k",
-      "teamsize": "10"
+      "teamSize": "10"
     },
     {
       "name": "Innovation",
-      "contactinfo": "innovation@example.com",
+      "contactInfo": "innovation@example.com",
       "budget": "140k",
-      "teamsize": "15"
+      "teamSize": "15"
     },
     {
       "name": "Training and Development",
-      "contactinfo": "trainingdev@example.com",
+      "contactInfo": "trainingdev@example.com",
       "budget": "75k",
-      "teamsize": "20"
+      "teamSize": "20"
     },
     {
       "name": "Information Security",
-      "contactinfo": "infosecurity@example.com",
+      "contactInfo": "infosecurity@example.com",
       "budget": "120k",
-      "teamsize": "18"
+      "teamSize": "18"
     }
   ]
   

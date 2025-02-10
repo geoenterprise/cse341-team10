@@ -1,96 +1,96 @@
 [
     {
-      "location_name": "Los Angeles Office",
+      "locationName": "Los Angeles Office",
       "address": "456 Sunset Blvd, Los Angeles, CA 90028",
       "hours": "9am - 6pm"
     },
     {
-      "location_name": "Chicago Office",
+      "locationName": "Chicago Office",
       "address": "789 Michigan Ave, Chicago, IL 60611",
       "hours": "8am - 4pm"
     },
     {
-      "location_name": "San Francisco Office",
+      "locationName": "San Francisco Office",
       "address": "321 Market St, San Francisco, CA 94105",
       "hours": "10am - 6pm"
     },
     {
-      "location_name": "Miami Office",
+      "locationName": "Miami Office",
       "address": "112 Ocean Dr, Miami, FL 33139",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Dallas Office",
+      "locationName": "Dallas Office",
       "address": "2000 Ross Ave, Dallas, TX 75201",
       "hours": "8am - 5pm"
     },
     {
-      "location_name": "Seattle Office",
+      "locationName": "Seattle Office",
       "address": "550 1st Ave, Seattle, WA 98104",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Denver Office",
+      "locationName": "Denver Office",
       "address": "1020 16th St, Denver, CO 80202",
       "hours": "8am - 4pm"
     },
     {
-      "location_name": "Austin Office",
+      "locationName": "Austin Office",
       "address": "777 Congress Ave, Austin, TX 78701",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Boston Office",
+      "locationName": "Boston Office",
       "address": "500 Boylston St, Boston, MA 02116",
       "hours": "9am - 6pm"
     },
     {
-      "location_name": "Washington DC Office",
+      "locationName": "Washington DC Office",
       "address": "300 Pennsylvania Ave, Washington, DC 20500",
       "hours": "8am - 5pm"
     },
     {
-      "location_name": "Atlanta Office",
+      "locationName": "Atlanta Office",
       "address": "1400 Peachtree St, Atlanta, GA 30309",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Philadelphia Office",
+      "locationName": "Philadelphia Office",
       "address": "1700 John F Kennedy Blvd, Philadelphia, PA 19103",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Phoenix Office",
+      "locationName": "Phoenix Office",
       "address": "2500 N Central Ave, Phoenix, AZ 85004",
       "hours": "9am - 6pm"
     },
     {
-      "location_name": "Portland Office",
+      "locationName": "Portland Office",
       "address": "1200 SW 6th Ave, Portland, OR 97204",
       "hours": "8am - 4pm"
     },
     {
-      "location_name": "Minneapolis Office",
+      "locationName": "Minneapolis Office",
       "address": "220 S Washington Ave, Minneapolis, MN 55455",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Las Vegas Office",
+      "locationName": "Las Vegas Office",
       "address": "3500 Las Vegas Blvd, Las Vegas, NV 89109",
       "hours": "10am - 6pm"
     },
     {
-      "location_name": "San Diego Office",
+      "locationName": "San Diego Office",
       "address": "900 5th Ave, San Diego, CA 92101",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Orlando Office",
+      "locationName": "Orlando Office",
       "address": "700 Lake Destiny Dr, Orlando, FL 32810",
       "hours": "9am - 5pm"
     },
     {
-      "location_name": "Salt Lake City Office",
+      "locationName": "Salt Lake City Office",
       "address": "150 S State St, Salt Lake City, UT 84111",
       "hours": "8am - 4pm"
     }

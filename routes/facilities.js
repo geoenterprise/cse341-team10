@@ -1,7 +1,9 @@
 const express = require('express');
 const routes = express.Router();
-const facilitiesController = require('../controllers/facilities');
+const controller = require('../controllers/index');
 const validation = require('../middleware/validate');
+const collections =require('../helpers/collections');
+const { Collection } = require('mongoose');
 // const { isAuthenticated } = require("../middleware/authenticate");
 
 routes.get('/', facilitiesController.getAllFacilities);
@@ -12,19 +14,11 @@ routes.get('/:id', facilitiesController.getSingleFacility);
 // routes.delete('/:id', isAuthenticated, facilitiesController.deleteFacility);
 routes.put(
     '/test/:id', 
-    validation.saveEmployees, 
+    validation.saveFacilities,
     (req, res) => {
-        //#swagger.tags=['Employees']
-        facilitiesController.update(req, res, 'employees', {
-            firstname: req.body.firstname,
-            lastname: req.body.lastname,
-            badgenumber: req.body.badgenumber,
-            department: req.body.department,
-            shift: req.body.shift,
-            location: req.body.location,
-            status: req.body.status
-        }
-    )}
+        //#swagger.tags=['Facilities']
+        controller.update(req, res, collections.facilities)
+    }
 )
 routes.post('/', validation.saveFacilities, facilitiesController.createFacility);
 routes.put('/:id', validation.saveFacilities, facilitiesController.updateFacility);

@@ -58,20 +58,6 @@ const updateFacility = async (req, res) => {
     }
 };
 
-const update = async (req, res, collection, rules) => {
-    if (!ObjectId.isValid(req.params.id)) {
-        res.status(400).json('Must be valid ID to update');
-    }
-    const facilityId = new ObjectId(req.params.id);
-    const facility = rules;
-    const result = await mongodb.getDatabase().db().collection(collection).replaceOne({ _id: facilityId }, facility);
-    if (result.modifiedCount > 0) {
-        res.status(204).send();
-    } else {
-        res.status(500).json(result.error || `Error occurred while updating ${collection}`);
-    }
-};
-
 const deleteFacility = async (req, res) => {
     //#swagger.tags=['Facilities']
     if (!ObjectId.isValid(req.params.id)) {

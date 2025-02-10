@@ -1,122 +1,122 @@
 [
     {
-      "first_name": "Bob",
-      "last_name": "Smith",
-      "badgenumber": "15346",
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "badgeNumber": "15346",
       "email": "bob.smith@example.com"
     },
     {
-      "first_name": "Charlie",
-      "last_name": "Davis",
-      "badgenumber": "15347",
+      "firstName": "Charlie",
+      "lastName": "Davis",
+      "badgeNumber": "15347",
       "email": "charlie.davis@example.com"
     },
     {
-      "first_name": "David",
-      "last_name": "Williams",
-      "badgenumber": "15348",
+      "firstName": "David",
+      "lastName": "Williams",
+      "badgeNumber": "15348",
       "email": "david.williams@example.com"
     },
     {
-      "first_name": "Emily",
-      "last_name": "Brown",
-      "badgenumber": "15349",
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "badgeNumber": "15349",
       "email": "emily.brown@example.com"
     },
     {
-      "first_name": "Frank",
-      "last_name": "Miller",
-      "badgenumber": "15350",
+      "firstName": "Frank",
+      "lastName": "Miller",
+      "badgeNumber": "15350",
       "email": "frank.miller@example.com"
     },
     {
-      "first_name": "Grace",
-      "last_name": "Wilson",
-      "badgenumber": "15351",
+      "firstName": "Grace",
+      "lastName": "Wilson",
+      "badgeNumber": "15351",
       "email": "grace.wilson@example.com"
     },
     {
-      "first_name": "Helen",
-      "last_name": "Moore",
-      "badgenumber": "15352",
+      "firstName": "Helen",
+      "lastName": "Moore",
+      "badgeNumber": "15352",
       "email": "helen.moore@example.com"
     },
     {
-      "first_name": "Isaac",
-      "last_name": "Taylor",
-      "badgenumber": "15353",
+      "firstName": "Isaac",
+      "lastName": "Taylor",
+      "badgeNumber": "15353",
       "email": "isaac.taylor@example.com"
     },
     {
-      "first_name": "Jack",
-      "last_name": "Anderson",
-      "badgenumber": "15354",
+      "firstName": "Jack",
+      "lastName": "Anderson",
+      "badgeNumber": "15354",
       "email": "jack.anderson@example.com"
     },
     {
-      "first_name": "Kara",
-      "last_name": "Thomas",
-      "badgenumber": "15355",
+      "firstName": "Kara",
+      "lastName": "Thomas",
+      "badgeNumber": "15355",
       "email": "kara.thomas@example.com"
     },
     {
-      "first_name": "Liam",
-      "last_name": "Jackson",
-      "badgenumber": "15356",
+      "firstName": "Liam",
+      "lastName": "Jackson",
+      "badgeNumber": "15356",
       "email": "liam.jackson@example.com"
     },
     {
-      "first_name": "Megan",
-      "last_name": "White",
-      "badgenumber": "15357",
+      "firstName": "Megan",
+      "lastName": "White",
+      "badgeNumber": "15357",
       "email": "megan.white@example.com"
     },
     {
-      "first_name": "Nina",
-      "last_name": "Harris",
-      "badgenumber": "15358",
+      "firstName": "Nina",
+      "lastName": "Harris",
+      "badgeNumber": "15358",
       "email": "nina.harris@example.com"
     },
     {
-      "first_name": "Oliver",
-      "last_name": "Martin",
-      "badgenumber": "15359",
+      "firstName": "Oliver",
+      "lastName": "Martin",
+      "badgeNumber": "15359",
       "email": "oliver.martin@example.com"
     },
     {
-      "first_name": "Paul",
-      "last_name": "Lee",
-      "badgenumber": "15360",
+      "firstName": "Paul",
+      "lastName": "Lee",
+      "badgeNumber": "15360",
       "email": "paul.lee@example.com"
     },
     {
-      "first_name": "Quinn",
-      "last_name": "Perez",
-      "badgenumber": "15361",
+      "firstName": "Quinn",
+      "lastName": "Perez",
+      "badgeNumber": "15361",
       "email": "quinn.perez@example.com"
     },
     {
-      "first_name": "Rachel",
-      "last_name": "Clark",
-      "badgenumber": "15362",
+      "firstName": "Rachel",
+      "lastName": "Clark",
+      "badgeNumber": "15362",
       "email": "rachel.clark@example.com"
     },
     {
-      "first_name": "Sam",
-      "last_name": "Rodriguez",
-      "badgenumber": "15363",
+      "firstName": "Sam",
+      "lastName": "Rodriguez",
+      "badgeNumber": "15363",
       "email": "sam.rodriguez@example.com"
     },
     {
-      "first_name": "Tina",
-      "last_name": "Lewis",
-      "badgenumber": "15364",
+      "firstName": "Tina",
+      "lastName": "Lewis",
+      "badgeNumber": "15364",
       "email": "tina.lewis@example.com"
     },
     {
-      "first_name": "Uma",
-      "last_name": "Young",
-      "badgenumber": "15365",
+      "firstName": "Uma",
+      "lastName": "Young",
+      "badgeNumber": "15365",
       "email": "uma.young@example.com"
     }
   ]
