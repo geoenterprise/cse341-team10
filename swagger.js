@@ -7,8 +7,8 @@ const doc = {
     title: 'Coorperate Company API',
     description: 'Tracks employee, manager and store location',
   },
-  host: 'localhost:3100', // cse341-team10.onrender.com
-  schemes: ['http', 'https'],
+  host: 'cse341-team10.onrender.com', // cse341-team10.onrender.com || localhost3100
+  schemes: ['https', 'http'],
 };
 
 const outputFile = './swagger.json';
