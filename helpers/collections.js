@@ -1,71 +1,83 @@
-const departments = (req, res) => {
+const departments = (req, fullReq = true) => {
+    let item;
+    fullReq === true ? item = req.body : item = req;
     return {
         name: 'departments',
         rules: {
-            name: req.body.name,
-            contactInfo: req.body.contactInfo,
-            budget: req.body.budget,
-            teamSize: req.body.teamSize
+            name: item.name,
+            contactInfo: item.contactInfo,
+            budget: item.budget,
+            teamSize: item.teamSize
         }
     }
 }
 
-const employees = (req, res) => {
+const employees = (req, fullReq = true) => {
+    let item;
+    fullReq === true ? item = req.body : item = req;
     return {
         name: 'employees',
         rules: {
-            firstName: req.body.firstName,
-            lastName: req.body.lastName,
-            badgeNumber: req.body.badgeNumber,
-            department: req.body.department,
-            shift: req.body.shift,
-            location: req.body.location,
-            status: req.body.status
+            firstName: item.firstName,
+            lastName: item.lastName,
+            badgeNumber: item.badgeNumber,
+            department: item.department,
+            shift: item.shift,
+            location: item.location,
+            status: item.status
         }
     }
 }
 
-const facilities = (req, res) => {
+const facilities = (req, fullReq = true) => {
+    let item;
+    fullReq === true ? item = req.body : item = req;
     return {
         name: 'facilities',
         rules: {
-            facilityLocation: req.body.facilityLocation,
-            facilityName: req.body.facilityName,
-            facilityStatus: req.body.facilityStatus
+            facilityLocation: item.facilityLocation,
+            facilityName: item.facilityName,
+            facilityStatus: item.facilityStatus
         }
     }
 }
 
-const locations = (req, res) => {
+const locations = (req, fullReq = true) => {
+    let item;
+    fullReq === true ? item = req.body : item = req;
     return {
         name: 'locations',
         rules: {
-            locationName: req.body.locationName,
-            address: req.body.address,
-            hours: req.body.hours
+            locationName: item.locationName,
+            adds: item.adds,
+            hours: item.hours
         }
     }
 }
 
-const managers = (req, res) => {
+const managers = (req, fullReq = true) => {
+    let item;
+    fullReq === true ? item = req.body : item = req;
     return {
         name: 'managers',
         rules: {
-            firstName: req.body.firstName,
-            lastName: req.body.lastName,
-            badgeNumber: req.body.badgeNumber,
-            email: req.body.email
+            firstName: item.firstName,
+            lastName: item.lastName,
+            badgeNumber: item.badgeNumber,
+            email: item.email
         }
     }
 }
 
 // this one is for copy paste
 // do not include in exports
-const collectionDraft = (req, res) => {
+const collectionDraft = (req, fullReq = true) => {
+    let item;
+    fullReq === true ? item = req.body : item = req;
     return {
         name: '',
         rules: {
-        
+           use: item
         }
     }
 }
