@@ -7,8 +7,21 @@
   },
   "host": "cse341-team10.onrender.com",
   "basePath": "/",
-  "schemes": "https",
+  "schemes": [
+    "https",
+    "http"
+  ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/": {
       "get": {
         "tags": [
@@ -22,21 +35,148 @@
         }
       }
     },
+    "/departments/": {
+      "get": {
+        "tags": [
+          "Departments"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Departments"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "contactInfo": {
+                  "example": "any"
+                },
+                "budget": {
+                  "example": "any"
+                },
+                "teamSize": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/departments/{id}": {
+      "get": {
+        "tags": [
+          "Departments"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Departments"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "contactInfo": {
+                  "example": "any"
+                },
+                "budget": {
+                  "example": "any"
+                },
+                "teamSize": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Departments"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
     "/employees/": {
       "get": {
         "tags": [
           "Employees"
         ],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
+          "default": {
+            "description": ""
           }
         }
       },
@@ -52,13 +192,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstname": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
-                "badgenumber": {
+                "badgeNumber": {
                   "example": "any"
                 },
                 "department": {
@@ -78,14 +218,11 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
           "400": {
             "description": "Bad Request"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "401": {
+            "description": "Unauthorized"
           }
         }
       }
@@ -96,9 +233,6 @@
           "Employees"
         ],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -108,14 +242,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "404": {
-            "description": "Not Found"
+          "default": {
+            "description": ""
           }
         }
       },
@@ -137,13 +265,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstname": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
-                "badgenumber": {
+                "badgeNumber": {
                   "example": "any"
                 },
                 "department": {
@@ -163,14 +291,11 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
           "400": {
             "description": "Bad Request"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "401": {
+            "description": "Unauthorized"
           }
         }
       },
@@ -188,14 +313,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
+          "401": {
+            "description": "Unauthorized"
           }
         }
       }
@@ -206,12 +325,9 @@
           "Facilities"
         ],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "default": {
+            "description": ""
           }
         }
       },
@@ -241,14 +357,11 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
           "400": {
             "description": "Bad Request"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "401": {
+            "description": "Unauthorized"
           }
         }
       }
@@ -259,9 +372,6 @@
           "Facilities"
         ],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -271,11 +381,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
+          "default": {
+            "description": ""
           }
         }
       },
@@ -311,14 +418,11 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
           "400": {
             "description": "Bad Request"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "401": {
+            "description": "Unauthorized"
           }
         }
       },
@@ -336,14 +440,268 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/locations/": {
+      "get": {
+        "tags": [
+          "Locations"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Locations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "locationName": {
+                  "example": "any"
+                },
+                "adds": {
+                  "example": "any"
+                },
+                "hours": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
           "400": {
             "description": "Bad Request"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/locations/{id}": {
+      "get": {
+        "tags": [
+          "Locations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Locations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "locationName": {
+                  "example": "any"
+                },
+                "adds": {
+                  "example": "any"
+                },
+                "hours": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Locations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/managers/": {
+      "get": {
+        "tags": [
+          "Managers"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Managers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "badgeNumber": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/managers/{id}": {
+      "get": {
+        "tags": [
+          "Managers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Managers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "badgeNumber": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Managers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
           }
         }
       }

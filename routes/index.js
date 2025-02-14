@@ -3,13 +3,14 @@ const routes = require('express').Router();
 
 routes.use('/', require('./swagger'));
 
-routes.get('/', (req, res) => { 
-    //#swagger.tags=['Whats up group 10!']
-    res.send('Whats up group 10!');
-});
+routes.use('/', require('./auth'));
 
+routes.use('/departments', require('./departments'));
 routes.use('/employees', require('./employees'));
 routes.use('/facilities', require('./facilities'));
+routes.use('/locations', require('./locations'));
+routes.use('/managers', require('./managers'));
+
 
 // Commented out for OAuth
 // routes.get('/login', passport.authenticate('github'), (req, res) => {});

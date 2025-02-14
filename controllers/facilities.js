@@ -77,5 +77,5 @@ module.exports = {
     getSingleFacility,
     createFacility,
     deleteFacility,
-    updateFacility
+    updateFacility,
 }

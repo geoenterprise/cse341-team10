@@ -47,9 +47,9 @@ const getSingle = async (req, res) => {
 const createEmployee = async (req, res) => {
     //#swagger.tags=['Employees']
     const employee = {
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        badgenumber: req.body.badgenumber,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        badgeNumber: req.body.badgeNumber,
         department: req.body.department,
         shift: req.body.shift,
         location: req.body.location,
@@ -71,9 +71,9 @@ const updateEmployee = async (req, res) => {
     }
     const employeeId = new ObjectId(req.params.id);
     const employee = {
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        badgenumber: req.body.badgenumber,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        badgeNumber: req.body.badgeNumber,
         department: req.body.department,
         shift: req.body.shift,
         location: req.body.location,
