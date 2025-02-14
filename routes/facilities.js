@@ -4,46 +4,45 @@ const controller = require('../controllers/index');
 const validation = require('../middleware/validate');
 const collections =require('../helpers/collections');
 const { Collection } = require('mongoose');
-// const { isAuthenticated } = require("../middleware/authenticate");
+const { isAuthenticated } = require("../middleware/authenticate");
 
 routes.get(
     '/',
     (req, res) => {
         //#swagger.tags=['Facilities']
-        controller.getAll(req, res, collections.facilities(req, res))
+        controller.getAll(req, res, collections.facilities(req))
     }
 )
 routes.get(
     '/:id', 
     (req, res) => {
-        //#swagger.tags=['Facilities']
-        controller.getSingle(req, res, collections.facilities(req, res))
+        //#swagger.tags=['Facilities']    controller.getSingle(req, res, collections.facilities(req))
     }
 )
 routes.post(
     '/',
-    // isAuthenticated,
+    isAuthenticated,
     validation.saveFacilities,
     (req, res) => {
         //#swagger.tags=['Facilities']
-        controller.create(req, res, collections.facilities(req, res))
+        controller.create(req, res, collections.facilities(req))
     }
 )
 routes.put(
     '/:id', 
+    isAuthenticated,
     validation.saveFacilities,
-    // isAuthenticated,
     (req, res) => {
         //#swagger.tags=['Facilities']
-        controller.update(req, res, collections.facilities(req, res))
+        controller.update(req, res, collections.facilities(req))
     }
 )
 routes.delete(
     '/:id',
-    // isAuthenticated,
+    isAuthenticated,
     (req, res) => {
         //#swagger.tags=['Facilities']
-        controller.deleteItem(req, res, collections.facilities(req, res))
+        controller.deleteItem(req, res, collections.facilities(req.body, false))
     }
 )
 
