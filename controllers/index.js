@@ -49,10 +49,10 @@ const deleteItem = async (req, res, collection) => {
     }
     const id = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection(collection.name).deleteOne({ _id: id });
-    if (result.deleteCount > 0) {
-        res.status(500).json({ message: `item not found in ${collection.name} or already deleted` });
-    } else {
+    if (result.deletedCount > 0) {
         res.status(204).send();
+    } else {
+        res.status(500).json({ message: `item not found in ${collection.name} or already deleted` });
     }
 };
 
