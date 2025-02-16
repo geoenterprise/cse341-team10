@@ -2,9 +2,9 @@ const validator = require('../helpers/validate');
 
 const saveEmployees = (req, res, next) => {
     const employeeValidationRule = {
-        firstname: "required|string",
-        lastname: "required|string",
-        badgenumber: "required|string",
+        firstName: "required|string",
+        lastName: "required|string",
+        badgeNumber: "required|string",
         department: "required|string",
         shift: "required|string",
         location: "required|string",
