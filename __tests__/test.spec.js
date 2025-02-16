@@ -18,18 +18,18 @@ let app2 = new express(); // Another express instance for different routing
 // Middleware setup for the test app
 app2.use('/', routes);
 
-describe('responds to /Logged Out', () => {
+describe('responds to /Whats up group 10!', () => {
     // Test for checking if user is logged out when accessing root
-    test('It should fetch if user is logged out', async () => {
+    test('It should return Whats up group 10!', async () => {
         const res = await request(app2).get('/'); // Send GET request to the root URL
         
         // Log expected vs. actual response for debugging
-        console.log(`Expected: Logged Out \nReceived: ${res.text}`);
+        console.log(`Expected: Whats up group 10! \nReceived: ${res.text}`);
 
         // Assertions to check if the response matches the expected result
         expect(res.header['content-type']).toBe('text/html; charset=utf-8');
         expect(res.statusCode).toBe(200);
-        expect(res.text).toEqual('Logged Out');
+        expect(res.text).toEqual('Whats up group 10!');
     
     }, 60000); // Increase timeout for slow tests
 
