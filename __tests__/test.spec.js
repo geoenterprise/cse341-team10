@@ -80,6 +80,7 @@ afterEach(async () => {
 // Clean up after all tests (stop in-memory MongoDB server)
 afterAll(async () => {
     await mongoServer.stop();
+    await db.client.close(); // Ensure client connection is closed
 });
 
 // Test for fetching all departments
