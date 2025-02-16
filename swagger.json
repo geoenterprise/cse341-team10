@@ -473,7 +473,7 @@
                 "locationName": {
                   "example": "any"
                 },
-                "adds": {
+                "address": {
                   "example": "any"
                 },
                 "hours": {
@@ -534,7 +534,7 @@
                 "locationName": {
                   "example": "any"
                 },
-                "adds": {
+                "address": {
                   "example": "any"
                 },
                 "hours": {
