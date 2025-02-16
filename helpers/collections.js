@@ -49,7 +49,7 @@ const locations = (req, fullReq = true) => {
         name: 'locations',
         rules: {
             locationName: item.locationName,
-            adds: item.adds,
+            address: item.address,
             hours: item.hours
         }
     }
