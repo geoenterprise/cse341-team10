@@ -15,17 +15,18 @@ const getAll = async (req, res, collection) => {
 
 const getSingle = async (req, res, collection) => {
     if (!ObjectId.isValid(req.params.id)) {
-        res.status(400).json('Must be valid ID');
+        return res.status(400).json('Must be valid ID');
     }
     const id = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection(collection.name).find({ _id: id });
+    
     try {
         result.toArray().then((items) => {
             res.setHeader('Content-Type', 'application/json');
             res.status(200).json(items[0]);
         });
     } catch {
-        res.status(400).json('ID might not exist');
+        res.status(400).json("Must be valid ID");
     }
 };
 
