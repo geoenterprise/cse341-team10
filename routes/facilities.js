@@ -16,7 +16,8 @@ routes.get(
 routes.get(
     '/:id', 
     (req, res) => {
-        //#swagger.tags=['Facilities']    controller.getSingle(req, res, collections.facilities(req))
+        //#swagger.tags=['Facilities']    
+        controller.getSingle(req, res, collections.facilities(req))
     }
 )
 routes.post(
